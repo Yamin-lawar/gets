@@ -1,22 +1,16 @@
-"use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation"; 
 
 type Props = {};
 
 export default function GptCards({}: Props) {
-  const router = useRouter(); // Use useRouter to get access to routing methods
-
-  const handleClick = () => {
-    router.push("/charts"); // Use push to navigate to the desired route
-  };
+  
   return (
     <div
       className="shadow-2xl p-8 border-2 hover:border-blue-500 rounded-lg 
         transform transition-transform duration-300 hover:scale-105 cursor-pointer w-80 
         flex flex-col items-center justify-center bg-white"
-      onClick={handleClick}
+        //onClick={handleClick}
     >
       <div className="flex items-center justify-center mb-4">
         <Image src="chart.svg" alt="Chart Icon" width={100} height={100} />
