@@ -10,15 +10,13 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "es6",
+    "module": "preserve",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
-    
     "plugins": [
       {
         "name": "next"
@@ -35,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src",
+    "src"
   ],
   "exclude": [
     "node_modules"
